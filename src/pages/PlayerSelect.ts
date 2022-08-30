@@ -1,5 +1,5 @@
 //@ts-ignore
-import * as characters from "../src/characters/characters.json";
+let characters = require("../src/characters/characters.json");
 import { Container, Sprite } from "pixi.js";
 import { applt } from "../app";
 import { imageButton } from "../customElements/imageButton";
@@ -13,7 +13,7 @@ export class PlayerSelect extends Container {
   selections: number[];
   display: CharterSelect[];
   current: number;
-  constructor(app) {
+  constructor(app: applt) {
     super();
     this.app = app;
 
@@ -93,7 +93,7 @@ export class PlayerSelect extends Container {
     });
   }
 
-  nextChar(x, y, i): imageButton {
+  nextChar(x: number, y: number, i: number): imageButton {
     let loc = characters.list[i].location;
     let char = new imageButton(this.app, {
       con: this,

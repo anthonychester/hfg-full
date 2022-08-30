@@ -1,5 +1,5 @@
 //@ts-ignore
-import * as maps from "../src/maps/maps.json";
+let maps = require("../src/maps/maps.json");
 import { Container, Sprite } from "pixi.js";
 import { applt, xypair } from "../app";
 import { imageButton } from "../customElements/imageButton";

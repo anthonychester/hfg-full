@@ -1,10 +1,13 @@
 import { applt } from "./app";
 //@ts-ignore
-import * as assests from "./src/assests.json";
+//import * as assests from "./src/assests.json";
+let assests = require("./src/assests.json");
 //@ts-ignore
-import * as characters from "./src/characters/characters.json";
+//import * as characters from "./src/characters/characters.json";
+let characters = require("./src/characters/characters.json");
 //@ts-ignore
-import * as maps from "./src/maps/maps.json";
+//import * as maps from "./src/maps/maps.json";
+let maps = require("./src/maps/maps.json");
 interface Assests {
   unnamed: string[];
   named: string[][];
@@ -15,7 +18,7 @@ export class Loader {
   assests: Assests;
   toload: number;
 
-  constructor(app) {
+  constructor(app: applt) {
     this.app = app;
     this.assests = assests;
     this.toload = 0;
