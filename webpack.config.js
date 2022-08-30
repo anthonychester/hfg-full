@@ -25,7 +25,7 @@ const DefinePluginConfig = new webpack.DefinePlugin({
 module.exports = {
   // @babel/polyfill makes the bundle size too large for codesandbox.io sync mechanism so don't use in dev env.
   entry: dev
-    ? [path.resolve(__dirname, "src/index.ts")]
+    ? [path.resolve(__dirname, "src/main.ts")]
     : ["@babel/polyfill", path.resolve(__dirname, "src/index.ts")],
 
   module: {

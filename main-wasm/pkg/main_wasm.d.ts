@@ -3,12 +3,19 @@
 /**
 */
 export function greet(): void;
+/**
+* @param {string} s
+*/
+export function window_alart(s: string): void;
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
   readonly greet: () => void;
+  readonly window_alart: (a: number, b: number) => void;
+  readonly __wbindgen_malloc: (a: number) => number;
+  readonly __wbindgen_realloc: (a: number, b: number, c: number) => number;
 }
 
 /**

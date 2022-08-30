@@ -1,0 +1,16 @@
+{
+  "unnamed": [
+    "./src/data.json",
+    "./src/icons/MainMeue/InfoIcon.png",
+    "./src/icons/MainMeue/InfoIcon-Dark.png",
+    "./src/icons/MainMeue/SettingsIcon.png",
+    "./src/icons/MainMeue/SettingsIcon-Dark.png",
+    "./src/icons/MainMeue/MainTitle.png",
+    "./src/icons/MainMeue/Version(2).png",
+    "./src/icons/MainMeue/LocalButton.png",
+    "./src/icons/MainMeue/LocalButton-Dark.png"
+  ],
+  "named": [
+    
+  ]
+}

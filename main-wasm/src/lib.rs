@@ -17,3 +17,8 @@ extern {
 pub fn greet() {
     alert("rust wasm working");
 }
+
+#[wasm_bindgen]
+pub fn window_alart(s: &str) {
+    alert(&format!("{}", s));
+}
