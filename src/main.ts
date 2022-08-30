@@ -12,7 +12,6 @@ import { MapSelect } from "./pages/MapSelect";
 import { PlayerSelect } from "./pages/PlayerSelect";
 import { LoadingScreen } from "./LoadingScreen";
 import { Stage } from "./Stage";
-import JoyconMod from "./mods/Joycon/main";
 import { inputHandler } from "./src/scripts/inputHandler";
 
 const inputImageAspectRatio = window.innerWidth / window.innerHeight;

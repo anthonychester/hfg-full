@@ -40,7 +40,8 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "pixi.js": "6.1.3"
   },
   "prettier": {
     "semi": true,
@@ -52,5 +53,9 @@
     "arrowParens": "always",
     "bracketSpacing": true
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "webpack-build-log-plugin": "^1.0.6",
+    "@types/pixi.js": "4.8.6"
+  }
 }

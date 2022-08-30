@@ -79,7 +79,7 @@ module.exports = {
         new HtmlWebpackHarddiskPlugin(),
         new MiniCssExtractPlugin(),
         new HotModuleReplacementPlugin(),
-        new ESLintWebpackPlugin()
+        new ESLintWebpackPlugin(),
       ]
     : [HTMLWebpackPluginConfig, new MiniCssExtractPlugin(), DefinePluginConfig]
 };
