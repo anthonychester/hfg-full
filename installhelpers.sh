@@ -1,0 +1,1 @@
+command -v rustup >/dev/null && echo \" rustup installed \" || curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh && command -v wasm-pack >/dev/null && echo \" wasm-pack installed \" || curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh

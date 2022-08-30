@@ -1,0 +1,15 @@
+{
+  "name": "main-wasm",
+  "collaborators": [
+    "Anthony Chester<anthonychester71@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "main_wasm_bg.wasm",
+    "main_wasm.js",
+    "main_wasm.d.ts"
+  ],
+  "module": "main_wasm.js",
+  "types": "main_wasm.d.ts",
+  "sideEffects": false
+}
