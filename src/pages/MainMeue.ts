@@ -4,6 +4,8 @@ import { imageButton } from "../customElements/imageButton";
 import { backroundCreate } from "../customElements/reuseable";
 import { window_alart } from "../../main-wasm/pkg/main_wasm.js";
 
+import { Graphics } from "pixi.js";
+
 export class MainMeue extends Container {
   app: applt;
   previous: any;
@@ -18,8 +20,15 @@ export class MainMeue extends Container {
     this.setup();
   }
   setup() {
-    let backround = backroundCreate(this.app, "0x69A5FF");
-
+    let backround = backroundCreate(this.app, 0x69A5FF);
+    /*let box = new Graphics();
+box.beginFill(0xff0000);
+box.x = 0;
+box.y = 0;
+box.drawRect(0, 0, 50, 50);
+box.endFill();
+//@ts-ignore
+this.addChild(box);*/
     this.addChild(backround);
   }
 

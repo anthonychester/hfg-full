@@ -1,7 +1,7 @@
 // This is needed for webpack to bundle and process the css
 //import "./main.css";
 import init, { greet, window_alart } from "../main-wasm/pkg/main_wasm.js";
-//resetup import { Graphics } from "pixi.js";
+import { Graphics } from "pixi.js";
 import { applt } from "./app";
 import { Loader } from "./loader";
 
@@ -44,14 +44,17 @@ box.endFill();
 app.stage.addChild(box);
 */
 
-app.stage.addChild(app.loading);
-
+//app.stage.addChild(app.loading);
+//@ts-ignore
+app.loading.zIndex = -1;
 app.secne = {
   MainMeue: new MainMeue(app)
 };
+app.stage.addChild(app.secne.MainMeue);
 app.curent = app.secne.MainMeue;
 //@ts-ignore
 app.curent.zIndex = 1;
+
 
 const updateloaded = new CustomEvent("loaded", {
   detail: {},
@@ -93,9 +96,9 @@ app.ticker.add(function (delta) {
   }
 });
 
-//window.addEventListener("resize", app.resize);
+window.addEventListener("resize", app.resize);
 
-  greet();
+  //greet();
 //});
 
 console.log("run");

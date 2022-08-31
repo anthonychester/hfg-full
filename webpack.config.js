@@ -1,4 +1,4 @@
-// webpack.config.js
+// webpack.config.js 
 // webpack dev server configuration is located in /dev.js
 
 const path = require("path");
@@ -8,6 +8,7 @@ const HtmlWebpackHarddiskPlugin = require("html-webpack-harddisk-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { HotModuleReplacementPlugin } = require("webpack");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const dev = process.env.NODE_ENV !== "production";
 

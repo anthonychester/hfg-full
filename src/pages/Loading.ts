@@ -23,7 +23,7 @@ export class Loading extends Container {
         fill: ["#ffffff"],
         fontSize: 90
     });
-    let backround = backroundCreate(this.app, "0x000000");
+    let backround = backroundCreate(this.app, 0x000000);
 
     this.addChild(backround);
 
@@ -72,9 +72,11 @@ export class Loading extends Container {
   inable() {
     //@ts-ignore
     this.zIndex = 2;
+    this.alpha = 1;
   }
   disable() {
     //@ts-ignore
-    this.zIndex = 0;
+    this.zIndex = -1;
+    this.alpha = 0;
   }
 }

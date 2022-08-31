@@ -10,7 +10,5 @@
     "./src/icons/MainMeue/LocalButton.png",
     "./src/icons/MainMeue/LocalButton-Dark.png"
   ],
-  "named": [
-    
-  ]
+  "named": []
 }

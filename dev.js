@@ -1,5 +1,4 @@
-// script to setup dev server with hot-reload
-
+// script to setup dev server with hot-reload 
 const webpackDevServer = require('webpack-dev-server');
 const webpack = require('webpack');
 const config = require('./webpack.config.js');
